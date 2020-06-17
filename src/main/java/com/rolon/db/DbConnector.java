@@ -25,16 +25,18 @@ public class DbConnector {
 		password=properties.getProperty("password");
 	}
 	
-	public void connection() throws SQLException {
+	public Connection connection() throws SQLException {
 	
 		connection= DriverManager.getConnection(url, user, password);
+		
+		return connection;
 	}
 	
-	private void getConfigurationFile() {
-		try {
-			file = new FileInputStream("./config.properties");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+	public FileInputStream getConfigurationFile() throws FileNotFoundException {
+		return file = new FileInputStream("./config.properties");
+	}
+	
+	public Properties getProperties() {
+		return properties;
 	}
 }
