@@ -4,4 +4,13 @@
   <artifactId>Backend1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Backend1</name>
+  
+  <dependencies>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.12</version>
+		<scope>provided</scope>
+	</dependency>
+  </dependencies>
 </project>
