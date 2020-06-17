@@ -1,3 +1,4 @@
+package com.rolon.model;
 import lombok.Data;
 
 @Data
