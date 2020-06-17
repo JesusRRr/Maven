@@ -3,6 +3,7 @@
 *.war
 *.ear
 *.class
+*.properties
 
 # eclipse
 .project
@@ -17,5 +18,3 @@ tmp/**/*
 local.properties
 .classpath
 .settings/
-.loadpath
-
